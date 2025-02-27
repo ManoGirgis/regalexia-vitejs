@@ -6,6 +6,7 @@ import SinglePost from '../pages/SinglePost';
 import Store from '../pages/Store';
 import Carrito from '../pages/Carrito';
 import Checkout from '../pages/Checkout';
+import PaySuccess from '../pages/PayFinish/PaySuccess';
 
 export default function Routing() {
     return (
@@ -17,6 +18,8 @@ export default function Routing() {
                 <Route path="/experiencias" element={<Store />} />
                 <Route path="/carrito" element={<Carrito />} />
                 <Route path="/checkout" element={<Checkout />} />
+                <Route path="/payment-success" element={<PaySuccess/>} />
+                <Route path="/payment-failed" element={<div>Pago fallido</div>} />
             </Routes>
         </Router>
     );
